@@ -27,8 +27,8 @@ namespace У.П
             // Проверяем заполнены ли поля
             if (string.IsNullOrEmpty(cBRou.Text) &&
                 string.IsNullOrEmpty(cBDate.Text) &&
-                string.IsNullOrEmpty(cBVan.Text) ||
-                (UpDOld.Value!=0))
+                string.IsNullOrEmpty(cBVan.Text) &&
+                (UpDOld.Value != 0))
                 // Выводим сообщение об ошибке если не поля заполнены
                 MessageBox.Show("Заполните все поля", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
